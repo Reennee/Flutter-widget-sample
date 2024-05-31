@@ -77,7 +77,23 @@ class MyHomePage extends StatelessWidget {
                     Container(color: Colors.green, height: 100),
                     Container(color: Colors.yellow, height: 100),
                   ],
-                ),         
+                ), 
+                Align(
+                  alignment: Alignment.center,
+                  child: Text('Aligned Text'),
+                ),
+                ConstrainedBox(
+                  constraints: BoxConstraints(
+                    minWidth: 100,
+                    minHeight: 50,
+                    maxWidth: 150,
+                    maxHeight: 100,
+                  ),
+                  child: Container(
+                    color: Colors.orange,
+                    child: Text('ConstrainedBox'),
+                  ),
+                ),        
               ],
             ),
           ),
