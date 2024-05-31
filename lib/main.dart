@@ -93,7 +93,23 @@ class MyHomePage extends StatelessWidget {
                     color: Colors.orange,
                     child: Text('ConstrainedBox'),
                   ),
-                ),        
+                ),
+                FittedBox(
+                  child: Text('FittedBox'),
+                ),
+                RotatedBox(
+                  quarterTurns: 1,
+                  child: Text('RotatedBox'),
+                ),
+                SizedBox(
+                  width: 100,
+                  height: 50,
+                  child: Container(color: Colors.purple),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('Padding Widget'),
+                )        
               ],
             ),
           ),
