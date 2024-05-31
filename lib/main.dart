@@ -125,7 +125,26 @@ class MyHomePage extends StatelessWidget {
                 ListTile(
                   leading: Icon(Icons.info),
                   title: Text('ListTile with Icon'),
-                )      
+                ) 
+                bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business),
+            label: 'Business',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.school),
+            label: 'School',
+          ),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+      )     
               ],
             ),
           ),
