@@ -50,7 +50,7 @@ class MyHomePage extends StatelessWidget {
                     Text('Row with Icon and Text'),
                   ],
                 ),
-                                Stack(
+                Stack(
                   children: [
                     Container(
                       width: 100,
@@ -67,8 +67,8 @@ class MyHomePage extends StatelessWidget {
                       ),
                     ),
                   ],
-                ),
-                GridView.count(
+                ), 
+                  GridView.count(
                   shrinkWrap: true,
                   crossAxisCount: 2,
                   children: [
@@ -77,80 +77,11 @@ class MyHomePage extends StatelessWidget {
                     Container(color: Colors.green, height: 100),
                     Container(color: Colors.yellow, height: 100),
                   ],
-                ),
-                Align(
-                  alignment: Alignment.center,
-                  child: Text('Aligned Text'),
-                ),
-                ConstrainedBox(
-                  constraints: BoxConstraints(
-                    minWidth: 100,
-                    minHeight: 50,
-                    maxWidth: 150,
-                    maxHeight: 100,
-                  ),
-                  child: Container(
-                    color: Colors.orange,
-                    child: Text('ConstrainedBox'),
-                  ),
-                ),
-                FittedBox(
-                  child: Text('FittedBox'),
-                ),
-                RotatedBox(
-                  quarterTurns: 1,
-                  child: Text('RotatedBox'),
-                ),
-                SizedBox(
-                  width: 100,
-                  height: 50,
-                  child: Container(color: Colors.purple),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text('Padding Widget'),
-                ),
-                Chip(
-                  label: Text('Chip Widget'),
-                ),
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.pink,
-                  child: Transform.rotate(
-                    angle: 0.1,
-                    child: Text('Transform Widget'),
-                  ),
-                ),
-                ListTile(
-                  leading: Icon(Icons.info),
-                  title: Text('ListTile with Icon'),
-                  trailing: Icon(Icons.arrow_forward),
-                ),
+                ),         
               ],
             ),
           ),
         ],
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
-          ),
-        ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.add),
       ),
     );
   }
