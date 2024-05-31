@@ -109,7 +109,23 @@ class MyHomePage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text('Padding Widget'),
-                )        
+                )
+                Chip(
+                  label: Text('Chip Widget'),
+                ),
+                Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.pink,
+                  child: Transform.rotate(
+                    angle: 0.1,
+                    child: Text('Transform Widget'),
+                  ),
+                ),
+                ListTile(
+                  leading: Icon(Icons.info),
+                  title: Text('ListTile with Icon'),
+                )      
               ],
             ),
           ),
